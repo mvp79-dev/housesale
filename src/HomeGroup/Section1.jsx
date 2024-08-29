@@ -126,7 +126,7 @@ export const Section1 = () => {
         },
         once: true
       });
-    });
+    }, 1000);
     
     return () => {
       paragraphs.forEach(paragraph => {
@@ -137,7 +137,7 @@ export const Section1 = () => {
       });
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
-    }, [language]);
+    }, []);
 
   useSplitTextAnimation("about-me-title");
 
